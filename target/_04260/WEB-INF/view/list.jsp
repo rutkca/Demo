@@ -84,11 +84,7 @@
                                 </a>
                             </li>
                         </c:if>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
+
                         <li class="page-item"><a class="page-link" href="${APP_PATH}/emps?pn=${pageInfo.pages}">末页</a> </li>
                     </ul>
                 </nav>
