@@ -18,7 +18,7 @@ public class EmployeeController {
 
     @RequestMapping("/emps")
     public String getAll(Model model, @RequestParam(value = "pn",defaultValue = "1") Integer pn){
-        PageHelper.startPage(1,5);
+        PageHelper.startPage(pn,5);
         List<Employee> employeeList =employeeService.getAll();
         PageInfo pageInfo =new PageInfo(employeeList);
         model.addAttribute("pageInfo",pageInfo);

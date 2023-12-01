@@ -91,8 +91,6 @@
       <artifactId>pagehelper</artifactId>
       <version>5.3.2</version>
     </dependency>
-
-
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
@@ -108,7 +106,16 @@
       <artifactId>jackson-annotations</artifactId>
       <version>2.14.2</version>
     </dependency>
-
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+    <dependency>
+      <groupId>taglibs</groupId>
+      <artifactId>standard</artifactId>
+      <version>1.1.2</version>
+    </dependency>
   </dependencies>
 
 
