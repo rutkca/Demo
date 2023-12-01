@@ -3,7 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>雇员列表</title>
-    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+<%
+    pageContext.setAttribute("APP_PATH",request.getContextPath());
+%>
+    <link rel="stylesheet" href="${APP_PATH}/static/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
@@ -15,7 +18,7 @@
         <div class="row">
             <div class="col-12 offset-8">
                 <button class="btn btn-primary">新增</button>
-                <button class="btn btn-danger">删除</button>
+                <button class="btnpageContext.setAttribute("APP_PATH",request.getContextPath()); btn-danger">删除</button>
             </div>
         </div>
         <div class="row">
@@ -64,6 +67,6 @@
     </div>
 
 </body>
-<script src="static/js/jquery.min.js"></script>
-<script src="static/bootstrap/css/bootstrap.min.css"></script>
+<script src="${APP_PATH}/static/js/jquery.min.js"></script>
+<script src="${APP_PATH}/static/bootstrap/css/bootstrap.min.css"></script>
 </html>
