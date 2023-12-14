@@ -79,7 +79,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    emp_id, emp_name, gender, email, d_id,
+    emp_id, emp_name, gender, email, d_id
   </sql>
   <sql id="WithDept_Column_List">
     emp_id, emp_name, gender, email, d_id,dept_id,dept_name

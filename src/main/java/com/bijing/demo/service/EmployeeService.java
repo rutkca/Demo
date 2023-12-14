@@ -17,4 +17,20 @@ public class EmployeeService {
     public List<Employee> getAll() {
         return employeeMapper.selectByExampleWithDept(null);
     }
+
+    public void save(Employee employee){
+        employeeMapper.insertSelective(employee);
+    }
+
+    public void update(Employee employee) {
+        employeeMapper.updateByPrimaryKeySelective(employee);
+    }
+
+    public Employee getById(Integer id) {
+       return employeeMapper.selectByPrimaryKey(id);
+    }
+
+    public void deleteById(Integer id) {
+        employeeMapper.deleteByPrimaryKey(id);
+    }
 }
